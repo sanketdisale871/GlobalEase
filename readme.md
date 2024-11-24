@@ -70,11 +70,19 @@ The technologies and tools used are:
 
 ## Some Glimpses of WorkConnect
 
-- Home Page
-  ![image](https://github.com/sanketdisale871/LadleVision/assets/109368165/f0447ee6-5e35-4bfa-97d5-a4d7e4619db2)
+- Login & Registration
+  ![login](https://github.com/user-attachments/assets/4c4e87e3-8826-4310-9d3d-45a04501a3c6)
+  ![register](https://github.com/user-attachments/assets/452ac252-25b2-4595-b6cf-daaa420433d9)
 
-- Admin Dashboard
-  ![image](https://github.com/sanketdisale871/LadleVision/assets/109368165/17396c0d-e04d-4444-9986-9ff6eea56b00)
+- Dashboard
+  ![DashBoard1](https://github.com/user-attachments/assets/cc9f74b7-6077-477b-b313-26d1ec6cc910)
+  ![DashBoard2](https://github.com/user-attachments/assets/6775ee04-1775-40cf-a2e6-0e6093fb0011)
 
-- Statistics
-  ![image](https://github.com/sanketdisale871/LadleVision/assets/109368165/a5b8ffd1-50a2-4815-844e-fb2f24f7cf9c)
+- GlobalEase GPT
+  ![GlobalEaseGPT1](https://github.com/user-attachments/assets/5ba356d0-3825-46be-8a7f-0ceb0f12fbb5)
+  ![GlobalEaseGPT2](https://github.com/user-attachments/assets/98564cce-92e4-4c54-9a19-88c7dd56781a)
+  ![GlobalEaseGPT3](https://github.com/user-attachments/assets/72b72207-a210-4307-a492-8bbf8daaa1e0)
+
+- Portals
+  ![portals](https://github.com/user-attachments/assets/8b098844-27aa-422a-81ae-bc78d780fc0e)
+
