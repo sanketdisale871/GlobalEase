@@ -13,7 +13,7 @@
     />
 
     <link href="a.html" />
-    <title>Dashboard | CitiWise</title>
+    <title>GlobalEase | Portals</title>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Fonts -->
@@ -626,30 +626,38 @@
             <div id="bankModal" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
-                <h2 style="margin-bottom: 1rem">Add Bank Account</h2>
+                <h2 style="margin-bottom: 1rem">Add New Portal</h2>
                 <form action="/api/account" method="post" id="bankForm">
-                  <label for="bank">Bank Name:</label>
+                  <!-- <label for="bank">Portal Name:</label> -->
 
-                  <select id="bank" name="bank" required>
+                  <!-- <select id="bank" name="bank" required>
                     <option value="">Select Bank</option>
                     <option value="Citi Bank">Citi Bank</option>
                     <option value="Chase Bank">Chase Bank</option>
                     <option value="Barclays">Barclays</option>
-                  </select>
+                  </select> -->
 
                   <br />
 
-                  <label for="accountType">Account Type:</label>
+                  <!-- <label for="accountType">URL of Portal</label>
                   <select id="accountType" name="accountType" required>
                     <option value="Saving">Saving</option>
                     <option value="Loan">Loan</option>
                     <option value="Credit">Credit</option>
                     <option value="Business">Business</option>
-                  </select>
+                  </select> -->
 
                   <br />
 
-                  <label for="accountNumber">Account Number:</label>
+                  <label for="accountNumber">Portal Name:</label>
+                  <input
+                    type="text"
+                    id="portalName"
+                    name="portalName"
+                    required
+                  /><br />
+
+                  <label for="accountNumber">URL of Portal:</label>
                   <input
                     type="text"
                     id="accountNumber"
@@ -724,29 +732,73 @@
           <div class="cards">
             <div class="card card-1">
               <div class="cardImge">
-                <img src="/img/dgft.png" alt="">
+                <img src="/img/grantsGov.png" alt="" style="width: 75%;">
               </div>
               <div >
-               <a href="/"
-               class="bnkBal">DGFT Portal</a>
+               <a href="https://www.grants.gov/"
+               class="bnkBal" style="margin-top: 2.5rem;">Grants.gov</a>
               </div>
           </div>
             <div class="card card-1">
               <div class="cardImge">
-                <img src="/img/indTradePor.png" alt="" style="height: 100%; width:85%">
+                <img src="/img/sba.png" alt="" style="height: 100%; width:95%">
               </div>
               <div >
-               <a href="/"
-               class="bnkBal">Indian Trade Portal</a>
+               <a href="https://www.sba.gov/"
+               class="bnkBal" style="margin-top: 1.5rem;">Small Business Administration</a>
               </div>
             </div>
             <div class="card card-1">
               <div class="cardImge">
-                <img src="/img/bcComp.png" alt="" style="height: 70%; width:50%">
+                <img src="/img/us_ener.png" alt="" style="height: 100%; width:95%">
               </div>
               <div >
-               <a href="https://admin.bcompliance.in/login"
-               class="bnkBal">BCompliance</a>
+               <a href="https://www.energy.gov/eere/renewable-energy"
+               class="bnkBal" style="margin-top: 2.1rem;">Energy.gov</a>
+              </div>
+              </div>
+          
+        </div>
+
+          <h2
+          style="
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+          "
+        >
+         European Portals
+        </h2>
+
+          <div class="cards">
+            <div class="card card-1">
+              <div class="cardImge">
+                <img src="/img/eu_comi.png" alt="" style="width: 75%;">
+              </div>
+              <div >
+               <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home"
+               class="bnkBal" style="margin-top: 2.5rem;">EU Funding & Grants</a>
+              </div>
+          </div>
+            <div class="card card-1">
+              <div class="cardImge">
+                <img src="/img/eu_euInvBank.png" alt="" style="height: 100%; width:95%">
+              </div>
+              <div >
+               <a href="https://www.eib.org/en/"
+               class="bnkBal" style="margin-top: 1.5rem;">European Investment Bank</a>
+              </div>
+            </div>
+            <div class="card card-1">
+              <div class="cardImge">
+                <img src="/img/eu_Enterprise.png" alt="" style="height: 100%; width:60%">
+              </div>
+              <div >
+               <a href="https://een.ec.europa.eu/"
+               class="bnkBal" >Enterprise Europe Network</a>
               </div>
               </div>
           
@@ -768,99 +820,7 @@
         };
     </script> -->
 
-    <script type="module">
-      const randomColors = [
-        "#3498db",
-        "#e74c3c",
-        "#2ecc71",
-        "#f39c12",
-        "#9b59b6",
-        "#1abc9c",
-        "#e67e22",
-        "#3498db",
-        "#16a085",
-        "#c0392b",
-        "#2980b9",
-        "#f1c40f",
-        "#8e44ad",
-        "#27ae60",
-        "#d35400",
-        "#34495e",
-        "#e74c3c",
-        "#2c3e50",
-        "#f39c12",
-        "#7f8c8d",
-      ];
-      function resetColors() {
-        const points = document.querySelectorAll(".point");
-        points.forEach((point, i) => {
-          if (i % 2 == 0) {
-            point.style.backgroundColor = "rgb(223, 222, 222)";
-          } else {
-            point.style.backgroundColor = "#f0f0f0";
-            point.style.width = "5px";
-            point.style.height = "5px";
-          }
-        });
-      }
-
-      function resetText() {
-        const points = document.querySelectorAll(".point");
-        points.forEach((point, i) => {
-          point.innerHTML = "";
-        });
-      }
-
-      function changeColor(pointNumber, color) {
-        const point = document.getElementById(`pointINR {pointNumber}`);
-        if (point) {
-          point.style.width = "20px";
-          point.style.height = "20px";
-          point.style.backgroundColor = color;
-        }
-      }
-
-      function changeText(pointNumber, ladleno) {
-        const point = document.getElementById(`pointINR {pointNumber}`);
-        if (point) {
-          point.style.width = "20px";
-          point.style.height = "20px";
-          point.innerHTML = ladleno;
-        }
-      }
-
-      // Function to fetch data and update colors and text
-      async function fetchDataAndUpdate() {
-        try {
-          const response = await fetch("/ladles/latest/location/all");
-          const result = await response.json();
-          console.log(result.data);
-          if (result.success) {
-            resetColors();
-            resetText();
-            // console.log(result.data);
-
-            result.data.forEach((l, i) => {
-              changeColor(l.Location, randomColors[l.LadleNo]);
-              changeText(l.Location, l.LadleNo);
-            });
-          }
-        } catch (error) {
-          console.log(error);
-        }
-      }
-
-      // Run the code every second
-      setInterval(fetchDataAndUpdate, 100);
-      // let i = 1
-      // setInterval(() => {
-      //     resetColors();
-      //     if (i == 10) i = 1;
-      //     changeColor(i, 'red');
-      //     i++;
-      // }, 1000);
-    </script>
-
+  
     <script>
       function openModal() {
         document.getElementById("bankModal").style.display = "block";
