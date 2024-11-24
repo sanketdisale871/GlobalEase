@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <img src="/img/logo.png" alt="GlobalEase Logo" width="150">
+  <img src="./controllers/logo.png" alt="GlobalEase Logo" width="150">
   <h1 align="center"><b>GlobalEase: AI tool that simplifies international expansion by 
   streamlining compliance, market analysis, and financial support</b></h1>
 </div>
