@@ -145,7 +145,11 @@ const renderDashboard = async (req, res) => {
       totalInvested += user.investments[i].amount;
     }
     if (user) {
-      return res.render("dashboard", { user, totalBalance, totalInvested });
+      return res.render("globalEaseDashboard", {
+        user,
+        totalBalance,
+        totalInvested,
+      });
     }
     return res.render("login", { errMsg: "Account not found!" });
   } catch (err) {
@@ -270,7 +274,7 @@ class FinancialChatbot {
       {
         role: "system",
         content:
-          "You are a personal AI assitant to help the user to mitigate their cyber attacks.Guide users, Don't give any unnecessary information.",
+          "You are GlobalEaseGPT, a specialized AI assistant designed to help businesses expand and sell their products in international markets. Your primary goal is to provide accurate, concise, and actionable guidance tailored to the user's needs, focusing on compliance requirements, documentation, financial incentives, marketing strategies, and logistics. Avoid unnecessary details, ensure clarity, and deliver user-specific insights to maximize their global expansion success.",
       },
       {
         role: "system",

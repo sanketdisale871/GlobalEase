@@ -1,0 +1,804 @@
+[
+  {
+    "id": 1,
+    "country": "France",
+    "region": "Netherlands",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Fashion Fund",
+      "amount": 11745,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 2,
+    "country": "US",
+    "region": "Illinois",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 15054,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 3,
+    "country": "US",
+    "region": "New York",
+    "category": "Clothing",
+    "grant": {
+      "name": "Local Business Support",
+      "amount": 18168,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 4,
+    "country": "US",
+    "region": "Florida",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Business Grant",
+      "amount": 26518,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 5,
+    "country": "US",
+    "region": "California",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Business Grant",
+      "amount": 27194,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 6,
+    "country": "France",
+    "region": "Netherlands",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Fashion Fund",
+      "amount": 21051,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 7,
+    "country": "Netherlands",
+    "region": "Spain",
+    "category": "Clothing",
+    "grant": {
+      "name": "Eco-Innovation Grant",
+      "amount": 27148,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 8,
+    "country": "Germany",
+    "region": "Netherlands",
+    "category": "Clothing",
+    "grant": {
+      "name": "Export Assistance Program",
+      "amount": 17152,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Green Tax Credit",
+      "description": "Tax credit for sustainable materials usage."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 9,
+    "country": "US",
+    "region": "Illinois",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 16853,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 10,
+    "country": "US",
+    "region": "California",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 13246,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 11,
+    "country": "US",
+    "region": "Illinois",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Business Grant",
+      "amount": 13075,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Green Tax Credit",
+      "description": "Tax credit for sustainable materials usage."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 12,
+    "country": "Spain",
+    "region": "Italy",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Fashion Fund",
+      "amount": 23389,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 13,
+    "country": "US",
+    "region": "Texas",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 19720,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Green Tax Credit",
+      "description": "Tax credit for sustainable materials usage."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 14,
+    "country": "US",
+    "region": "Texas",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 10468,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 15,
+    "country": "Spain",
+    "region": "Spain",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Fashion Fund",
+      "amount": 27727,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 18,
+    "country": "US",
+    "region": "New York",
+    "category": "Clothing",
+    "grant": {
+      "name": "Local Business Support",
+      "amount": 10789,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 19,
+    "country": "US",
+    "region": "Florida",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 18828,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 20,
+    "country": "Germany",
+    "region": "Netherlands",
+    "category": "Clothing",
+    "grant": {
+      "name": "Export Assistance Program",
+      "amount": 28608,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 21,
+    "country": "Spain",
+    "region": "France",
+    "category": "Clothing",
+    "grant": {
+      "name": "Sustainable Fashion Fund",
+      "amount": 21834,
+      "description": "Support for sustainable fashion businesses."
+    },
+    "incentive": {
+      "name": "Green Tax Credit",
+      "description": "Tax credit for sustainable materials usage."
+    },
+    "tax": {
+      "type": "VAT",
+      "rate": 21.100192596117477
+    }
+  },
+  {
+    "id": 22,
+    "country": "US",
+    "region": "Illinois",
+    "category": "Clothing",
+    "grant": {
+      "name": "Local Business Support",
+      "amount": 25751,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 23,
+    "country": "US",
+    "region": "Florida",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 17336,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Energy Efficiency Rebate",
+      "description": "Rebates for adopting energy-efficient technologies."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 24,
+    "country": "US",
+    "region": "New York",
+    "category": "Clothing",
+    "grant": {
+      "name": "Green Manufacturing Grant",
+      "amount": 10145,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Export Subsidy",
+      "description": "Financial assistance for exporting products."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+  {
+    "id": 25,
+    "country": "US",
+    "region": "New York",
+    "category": "Clothing",
+    "grant": {
+      "name": "Local Business Support",
+      "amount": 11183,
+      "description": "Support for eco-friendly practices in the clothing sector."
+    },
+    "incentive": {
+      "name": "Green Tax Credit",
+      "description": "Tax credit for sustainable materials usage."
+    },
+    "tax": {
+      "type": "Sales Tax",
+      "rate": 5.373733434470635
+    }
+  },
+
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "France",
+    "product_category": "Food and Beverages",
+    "compliance_requirements": "Ensure FDA approval for consumable items.",
+    "required_documentation": [
+      "Food Safety Certification",
+      "Nutritional Labeling",
+      "Packaging Material Approval"
+    ],
+    "additional_guidance": "Consult with a regulatory compliance expert before entering the market.",
+    "relevant_authorities": "Food and Drug Administration (FDA)",
+    "penalty_for_non_compliance": "Seizure of goods at customs and monetary penalties.",
+    "languages_required": "French"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "Canada",
+    "product_category": "Toys",
+    "compliance_requirements": "Follow REACH regulations for chemicals.",
+    "required_documentation": [
+      "Toy Safety Test Results",
+      "Age Appropriateness Documentation",
+      "Material Safety Data Sheet"
+    ],
+    "additional_guidance": "Provide clear documentation of environmental impact for eco-friendly certifications.",
+    "relevant_authorities": "Canadian Food Inspection Agency (CFIA)",
+    "penalty_for_non_compliance": "Significant fines and potential legal action.",
+    "languages_required": "English and German"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "Germany",
+    "product_category": "Electronics",
+    "compliance_requirements": "Comply with EU General Product Safety Directive.",
+    "required_documentation": [
+      "Import License",
+      "Product Specification Sheet",
+      "Declaration of Compliance"
+    ],
+    "additional_guidance": "Work with a certified customs broker to streamline the import process.",
+    "relevant_authorities": "European Chemicals Agency (ECHA)",
+    "penalty_for_non_compliance": "Ban on selling products within the EU.",
+    "languages_required": "German"
+  },
+  {
+    "country": "France",
+    "product_category": "Food and Beverages",
+    "compliance_requirements": "Ensure FDA approval for consumable items.",
+    "required_documentation": [
+      "Food Safety Certification",
+      "Nutritional Labeling",
+      "Packaging Material Approval"
+    ],
+    "additional_guidance": "Consult with a regulatory compliance expert before entering the market.",
+    "relevant_authorities": "Food and Drug Administration (FDA)",
+    "penalty_for_non_compliance": "Seizure of goods at customs and monetary penalties.",
+    "languages_required": "French"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "Canada",
+    "product_category": "Toys",
+    "compliance_requirements": "Follow REACH regulations for chemicals.",
+    "required_documentation": [
+      "Toy Safety Test Results",
+      "Age Appropriateness Documentation",
+      "Material Safety Data Sheet"
+    ],
+    "additional_guidance": "Provide clear documentation of environmental impact for eco-friendly certifications.",
+    "relevant_authorities": "Canadian Food Inspection Agency (CFIA)",
+    "penalty_for_non_compliance": "Significant fines and potential legal action.",
+    "languages_required": "English and German"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "Germany",
+    "product_category": "Electronics",
+    "compliance_requirements": "Comply with EU General Product Safety Directive.",
+    "required_documentation": [
+      "Import License",
+      "Product Specification Sheet",
+      "Declaration of Compliance"
+    ],
+    "additional_guidance": "Work with a certified customs broker to streamline the import process.",
+    "relevant_authorities": "European Chemicals Agency (ECHA)",
+    "penalty_for_non_compliance": "Ban on selling products within the EU.",
+    "languages_required": "German"
+  },
+  {
+    "country": "France",
+    "product_category": "Food and Beverages",
+    "compliance_requirements": "Ensure FDA approval for consumable items.",
+    "required_documentation": [
+      "Food Safety Certification",
+      "Nutritional Labeling",
+      "Packaging Material Approval"
+    ],
+    "additional_guidance": "Consult with a regulatory compliance expert before entering the market.",
+    "relevant_authorities": "Food and Drug Administration (FDA)",
+    "penalty_for_non_compliance": "Seizure of goods at customs and monetary penalties.",
+    "languages_required": "French"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "Germany",
+    "product_category": "Electronics",
+    "compliance_requirements": "Comply with EU General Product Safety Directive.",
+    "required_documentation": [
+      "Import License",
+      "Product Specification Sheet",
+      "Declaration of Compliance"
+    ],
+    "additional_guidance": "Work with a certified customs broker to streamline the import process.",
+    "relevant_authorities": "European Chemicals Agency (ECHA)",
+    "penalty_for_non_compliance": "Ban on selling products within the EU.",
+    "languages_required": "German"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "Germany",
+    "product_category": "Electronics",
+    "compliance_requirements": "Comply with EU General Product Safety Directive.",
+    "required_documentation": [
+      "Import License",
+      "Product Specification Sheet",
+      "Declaration of Compliance"
+    ],
+    "additional_guidance": "Work with a certified customs broker to streamline the import process.",
+    "relevant_authorities": "European Chemicals Agency (ECHA)",
+    "penalty_for_non_compliance": "Ban on selling products within the EU.",
+    "languages_required": "German"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "United Kingdom",
+    "product_category": "Cosmetics",
+    "compliance_requirements": "Adhere to CE marking requirements.",
+    "required_documentation": [
+      "Cosmetic Product Safety Report",
+      "Ingredient List",
+      "EU Declaration of Conformity"
+    ],
+    "additional_guidance": "Conduct product testing at accredited laboratories for faster approvals.",
+    "relevant_authorities": "British Standards Institution (BSI)",
+    "penalty_for_non_compliance": "Legal action for non-compliance and business license suspension.",
+    "languages_required": "English and French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  },
+  {
+    "country": "US",
+    "product_category": "Food and Beverages",
+    "compliance_requirements": "Ensure FDA approval for consumable items.",
+    "required_documentation": [
+      "Food Safety Certification",
+      "Nutritional Labeling",
+      "Packaging Material Approval"
+    ],
+    "additional_guidance": "Consult with a regulatory compliance expert before entering the market.",
+    "relevant_authorities": "Food and Drug Administration (FDA)",
+    "penalty_for_non_compliance": "Seizure of goods at customs and monetary penalties.",
+    "languages_required": "French"
+  },
+  {
+    "country": "United States",
+    "product_category": "Clothing",
+    "compliance_requirements": "Meet ASTM F963 safety standards.",
+    "required_documentation": [
+      "Certificate of Conformity",
+      "Product Safety Test Results",
+      "Labeling Compliance Documents"
+    ],
+    "additional_guidance": "Ensure your labels are translated into the local language of the target market.",
+    "relevant_authorities": "Consumer Product Safety Commission (CPSC)",
+    "penalty_for_non_compliance": "Fines up to $50,000 or product recall.",
+    "languages_required": "English"
+  }
+]

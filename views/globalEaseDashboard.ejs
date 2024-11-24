@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Custom Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+  <title>GlobalEase</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+
+  <!-- Sidebar CSS -->
+  <style>
+    .sidebar {
+      font-family: "Poppins", sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #041643;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 2px 1px 6px rgb(249, 255, 235);
+    }
+
+    .sidebar .logo {
+      width: 90%;
+      margin-bottom: 5%;
+    }
+
+    .sidebar.active {
+      width: 100px;
+      overflow: hidden;
+    }
+
+    .sidebar li {
+      list-style: none;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+    }
+
+    .sidebar ul {
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .sidebar span {
+      margin-right: 15px;
+    }
+
+    .sidebar--items a,
+    .sidebar--bottom-items a {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #ffffff;
+      padding: 7px;
+      border-radius: 13px;
+    }
+
+    .sidebar--items a:hover,
+    .sidebar--bottom-items a:hover {
+      background-color: #cdffcf;
+      color: #0031b9;
+    }
+
+    #active--link {
+      background-color: #39c440;
+      color: #fff;
+    }
+
+    .sidebar--items {
+      flex-grow: 0.85;
+      /* This makes the navigation items take up the remaining space */
+    }
+  </style>
+
+  <style>
+    .section-name {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .overview {
+      font-family: "Poppins", sans-serif;
+    }
+
+    div {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+
+  <style>
+    .expand-card:hover {
+      transform: scale(1.02);
+
+      box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+
+    }
+  </style>
+
+
+<style>
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 45%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 9% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 453px;
+  height: min-content;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form select {
+  margin-bottom: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- Navigation drawer -->
+  <div class="sidebar">
+    <!-- Logo Image -->
+    <img src="/img/logo.png" alt="description" class="logo" />
+
+    <!-- Horizantal Rule -->
+    <hr style="width: 100%; margin-bottom: 10%" />
+
+    <!-- Navigation Items -->
+    <ul class="sidebar--items">
+      <li>
+        <a href="/" id="active--link">
+          <span class="icon icon-1">
+            <i class="ri-layout-grid-line"></i>
+          </span>
+          <span class="sidebar--item">Dashboard</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/globalEaseGPT">
+          <span class="icon icon-2"><i class="ri-robot-3-fill"></i></span>
+          <span class="sidebar--item">globalEaseGPT</span>
+        </a>
+      </li>
+      <li>
+        <a href="/portals">
+          <span class="icon icon-5">
+            <i class="ri-pass-pending-fill"></i
+          ></span>
+          <span class="sidebar--item">Portals</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="sidebar--bottom-items">
+      <li>
+        <a href="/api/logout">
+          <span class="icon icon-8">
+            <i class="ri-logout-circle-line"></i>
+          </span>
+          <span class="sidebar--item">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Body -->
+  <div style="margin-left: 300px; padding-left: 20px">
+
+    <div class="section-name"
+      style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #ffffff; box-shadow: 2px 5px 20px rgba(12, 12, 12, 0.1);">
+
+      <div style="font-size: 22px; font-weight: bold; color: #000000; ">
+        Dashboard
+      </div>
+
+      <div style="display: flex; align-items: center;">
+
+
+        <div style="text-align: right; margin-right: 10px;">
+          <div style="font-size: 16px; font-weight: bold; color: #041643;">
+            Sanket Disale
+          </div>
+      
+        </div>
+
+
+        <div
+          style="width: 50px; height: 50px; border-radius: 50%; background-color: #000000; display: flex; align-items: center; justify-content: center;">
+          <i class="ri-account-circle-fill" style="font-size: 40px; color: #ffffff;"></i>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="overview">
+      <!-- Overview Heading -->
+      <h2
+        style="font-size: 22px; font-weight: bold; color: #333; margin-top: 30px; margin-bottom: 20px; padding-left: 10px;">
+        Overview
+      </h2>
+
+      <!-- Row with 3 Columns -->
+      <div style="display: flex; justify-content: space-between; padding-left: 15px; padding-right: 15px; ">
+
+
+        <div style="flex: 1; margin-right: 10px;">
+          <div class="expand-card"
+            style="background-color:#e8efff; padding: 15px; border-radius: 10px; box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1); text-align: left;">
+            <div style="display: flex; flex-direction: row; align-items: center;justify-content: space-between; ">
+              <div style="font-size: 30px; font-weight: bold; color: #000000;">
+                1025
+              </div>
+              <div style="font-size: 50px; color: #072777; margin-bottom: 0px;">
+                <i class="ri-cash-fill"></i>
+              </div>
+            </div>
+
+            <div style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 10px;">
+              Total available Grants and Subcidies
+            </div>
+
+          </div>
+        </div>
+
+        <div style="flex: 1; margin-right: 10px;">
+          <div class="expand-card"
+            style="background-color:#e4ffe0; padding: 15px; border-radius: 10px; box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1); text-align: left;">
+            <div style="display: flex; flex-direction: row; align-items: center;justify-content: space-between; ">
+              <div style="font-size: 30px; font-weight: bold; color: #000000;">
+               75%
+              </div>
+
+              <div style="font-size: 50px; color: #072777; margin-bottom: 0px;">
+                <i class="ri-database-2-fill"></i>
+              </div>
+
+            </div>
+            <div style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 10px;">
+              Compliance Readiness Score
+            </div>
+
+          </div>
+        </div>
+
+        <div style="flex: 1; margin-right: 10px;">
+          <div class="expand-card"
+            style="background-color:#fffce0; padding: 15px; border-radius: 10px; box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1); text-align: left;">
+            <div style="display: flex; flex-direction: row; align-items: center;justify-content: space-between; ">
+              <!-- <div style="font-size: 30px; font-weight: bold; color: #000000;">
+               1245
+              </div> -->
+
+              <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+              </div>
+
+              <div style="font-size: 50px; color: #072777; margin-bottom: 0px;">
+                <i class="ri-search-eye-line"></i>
+              </div>
+
+            </div>
+            <div style="font-size: 18px; font-weight: bold; color: #333; margin-bottom: 10px;">
+              Export Progress Tracker
+            </div>
+
+          </div>
+        </div>
+
+
+        
+        
+      </div>
+    </div>
+
+    <!-- Modal for Invest More -->
+    <div id="investMoreModal" class="modal">
+      
+    </div>
+    
+    
+
+    <h2
+        style="font-size: 22px; font-weight: bold; color: #333; margin-top: 30px; margin-bottom: 20px; padding-left: 10px;">
+        Visualization
+      </h2>
+
+    <div style="
+      margin:30px;
+      display: flex;
+      width: auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      justify-content: space-around;
+      height: 400px;
+    ">
+      <!-- Column 1: Pie Chart -->
+      <div style="
+              flex: 1;
+              padding: 10px; /* Reduce padding */
+              border-right: 1px solid #e0e0e0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            ">
+            <h3>Cost Breakdown</h3> <br>
+           
+        <canvas id="liabilitiesPieChart" style="width: 80%; height: 80%;"> /canvas> <!-- Adjusted canvas size -->
+      </div>
+
+      <!-- Column 2: Line Chart -->
+      <div style="
+              flex: 1;
+              padding: 10px; /* Reduce padding */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            ">
+        <canvas id="liabilitiesGrowthChart" style="width: 80%; height: 80%;"></canvas> <!-- Adjusted canvas size -->
+      </div>
+    </div>
+
+    <h2
+        style="font-size: 22px; font-weight: bold; color: #333; margin-top: 30px; margin-bottom: 20px; padding-left: 10px;">
+        Recent Activities
+      </h2>
+    <div style="
+      margin: 30px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    ">
+      <table style="
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+      ">
+        <!-- Table Header -->
+        <thead>
+          <tr style="
+            background-color: #f5f7fa;
+            text-align: left;
+            border-bottom: 2px solid #e0e0e0;
+            color: #072777;
+          ">
+            <th style="padding: 15px 10px;">Activity ID</th>
+            <th style="padding: 15px 10px;">Action</th>
+            <th style="padding: 15px 10px;">Timestamp</th>
+            <th style="padding: 15px 10px;">Status</th>
+          </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+          <!-- Example Row 1 -->
+          <tr style="
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s;
+          " onmouseover="this.style.backgroundColor='#f0f4f8';" onmouseout="this.style.backgroundColor='transparent';">
+            <td style="padding: 15px 10px;">001</td>
+            <td style="padding: 15px 10px;">Product Listing Created</td>
+            <td style="padding: 15px 10px;">2024-11-24 10:30 AM</td>
+            <td style="padding: 15px 10px;">
+              <span style="
+                background-color:  #4caf50;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: black;
+                font-weight: bold;
+              ">Completed</span>
+            </td>
+          </tr>
+
+          <!-- Example Row 2 -->
+          <tr style="
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s;
+          " onmouseover="this.style.backgroundColor='#f0f4f8';" onmouseout="this.style.backgroundColor='transparent';">
+            <td style="padding: 15px 10px;">002</td>
+            <td style="padding: 15px 10px;">Market Research Completed</td>
+            <td style="padding: 15px 10px;">2024-11-24 11:15 AM</td>
+            <td style="padding: 15px 10px;">
+              <span style="
+                background-color: #ffcd56;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: black;
+                font-weight: bold;
+              ">In Progress</span>
+            </td>
+          </tr>
+
+          <!-- Example Row 3 -->
+          <tr style="
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s;
+          " onmouseover="this.style.backgroundColor='#f0f4f8';" onmouseout="this.style.backgroundColor='transparent';">
+            <td style="padding: 15px 10px;">004</td>
+            <td style="padding: 15px 10px;">Export Compliance Checklist Generated</td>
+            <td style="padding: 15px 10px;">2024-11-22 02:00 PM</td>
+            <td style="padding: 15px 10px;">
+              <span style="
+                background-color: #4caf50;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: black;
+                font-weight: bold;
+              ">Completed</span>
+            </td>
+          </tr>
+          <!-- Example Row 3 -->
+          <tr style="
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s;
+          " onmouseover="this.style.backgroundColor='#f0f4f8';" onmouseout="this.style.backgroundColor='transparent';">
+            <td style="padding: 15px 10px;">005</td>
+            <td style="padding: 15px 10px;">Grant Eligibility Check Initiated</td>
+            <td style="padding: 15px 10px;">2024-11-21 09:00 AM</td>
+            <td style="padding: 15px 10px;">
+              <span style="
+                background-color: #ffcd56;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: black;
+                font-weight: bold;
+              ">In Progress</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+    <!-- Pie Chart and Graph ki script -->
+    <script>
+      // Pie Chart
+      const ctxPie = document
+        .getElementById("liabilitiesPieChart")
+        .getContext("2d");
+      const liabilitiesPieChart = new Chart(ctxPie, {
+        type: "doughnut",
+        data: {
+          labels: ['Compliance Fees', 'Shipping Costs', 'Taxes', 'Other Costs'],
+          datasets: [
+            {
+              label: "Cost Breakdown",
+              data: [30, 40, 20, 10],
+              backgroundColor: ['#FF6347', '#4CAF50', '#FFD700', '#3E8E41'],
+              borderColor: ['#FF6347', '#4CAF50', '#FFD700', '#3E8E41'],
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            tooltip: {
+              enabled: true,
+            },
+          },
+        },
+      });
+
+
+// Data for the line chart (Revenue Insights)
+    const data = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],  // Time periods (months)
+      datasets: [{
+          label: 'North America',
+          data: [50000, 55000, 60000, 65000, 70000, 75000, 80000],  // Revenue data for North America
+          borderColor: '#FF6347',  // Red line for North America
+          backgroundColor: 'rgba(255, 99, 71, 0.2)',  // Red transparent fill
+          fill: true,  // Fill the area under the line
+          tension: 0.1,  // Smooth the line
+      }, {
+          label: 'Europe',
+          data: [30000, 35000, 40000, 42000, 46000, 50000, 54000],  // Revenue data for Europe
+          borderColor: '#4CAF50',  // Green line for Europe
+          backgroundColor: 'rgba(76, 175, 80, 0.2)',  // Green transparent fill
+          fill: true,  // Fill the area under the line
+          tension: 0.1,  // Smooth the line
+      }, {
+          label: 'Asia',
+          data: [20000, 25000, 30000, 35000, 40000, 45000, 50000],  // Revenue data for Asia
+          borderColor: '#FFD700',  // Yellow line for Asia
+          backgroundColor: 'rgba(255, 215, 0, 0.2)',  // Yellow transparent fill
+          fill: true,  // Fill the area under the line
+          tension: 0.1,  // Smooth the line
+      }]
+    };
+
+    // Options for the line chart
+    const options = {
+      responsive: true,
+      scales: {
+          y: {
+              beginAtZero: true,  // Start the y-axis at zero
+              title: {
+                  display: true,
+                  text: 'Revenue in USD',
+              },
+          },
+      },
+      plugins: {
+          legend: {
+              position: 'top',  // Place legend at the top
+          },
+          tooltip: {
+              callbacks: {
+                  label: function(tooltipItem) {
+                      return tooltipItem.label + ': $' + tooltipItem.raw.toLocaleString();  // Format the tooltips
+                  }
+              }
+          }
+      }
+    };
+    
+  
+
+    // Get the canvas element to render the chart
+    const ctx = document.getElementById('liabilitiesGrowthChart').getContext('2d');
+
+    // Create the line chart using Chart.js
+    const revenueLineChart = new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: options
+    });
+
+     
+        
+    </script>
+
+    <!-- Modal Logic -->
+    <script>
+      const investMoreModal = document.getElementById("investMoreModal");
+      const investMoreBtn = document.getElementById("investMoreBtn");
+      const closeInvestMore = document.getElementById("closeInvestMore");
+
+      investMoreBtn.onclick = function () {
+        investMoreModal.style.display = "flex";
+      };
+
+      closeInvestMore.onclick = function () {
+        investMoreModal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == investMoreModal) {
+          investMoreModal.style.display = "none";
+        }
+        if (event.target == withdrawModal) {
+          withdrawModal.style.display = "none";
+        }
+      };
+
+      const withdrawModal = document.getElementById("withdrawModal");
+      const withdrawBtn = document.getElementById("withdrawBtn");
+      const closeWithdraw = document.getElementById("closeWithdraw");
+
+      withdrawBtn.onclick = function () {
+            withdrawModal.style.display = "flex";
+          };
+        
+          closeWithdraw.onclick = function () {
+            withdrawModal.style.display = "none";
+          };
+
+
+    </script>
+</body>
+
+</html>
